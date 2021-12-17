@@ -1,41 +1,44 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.box1 {
+  width: 33%;
+}
+.box2 {
+  width: 33%;
+}
+.box3 {
+  width: 33%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 浮动三栏 */
+.container1{
+  height: 100px;
 }
 
+.container1 > .left {
+  float: left;
+  width: 100px;
+  background: red;
+}
+
+.container1 > .content {
+  background: yellow;
+}
+
+.container1 > .right {
+  float: right;
+  width: 100px;
+  background: blue;
+}
+
+/* 绝对定位三栏 */
+/* table */
+/* grid */
+
+/* 动画 */
 .box {
   width: 100px;
   height: 100px;
@@ -44,20 +47,21 @@
 }
 
 @keyframes change_box {
-  0%{
+  0% {
     width: 0;
     height: 0;
   }
-  50%{
+  50% {
     width: 100px;
     height: 100px;
   }
-  100%{
+  100% {
     width: 0;
     height: 0;
   }
 }
 
+/* 扇形 */
 .sector {
   width: 100px;
   height: 100px;
