@@ -1,8 +1,8 @@
 import { useEffect, useState, useCallback, useReducer } from 'react';
 
 interface ICountDown {
-  initCount: number;
-  interval: number;
+  initCount?: number;
+  interval?: number;
   cb?: () => void;
 }
 
